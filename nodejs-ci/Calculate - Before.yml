@@ -1,0 +1,25 @@
+info:
+  name: Calculate - Before
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:3000/calculator?num1=10&num2=15&operation=divide
+  params:
+    - name: num1
+      value: "10"
+      type: query
+    - name: num2
+      value: "15"
+      type: query
+    - name: operation
+      value: divide
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
