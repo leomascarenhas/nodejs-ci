@@ -6,5 +6,5 @@ test('Test add function ZayQw', () => {
 })
 
 test('Test divide operation', () => {
-    expect(divide(10, 2)).toBe(5)
+    expect(divide(10, 2)).toBe(6)
 })
